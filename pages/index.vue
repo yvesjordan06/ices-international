@@ -107,4 +107,8 @@
     </section>
   </div>
 </template>
-<script></script>
+<script lang="ts" setup>
+useHead({
+  title: "ICES International - Home",
+});
+</script>
