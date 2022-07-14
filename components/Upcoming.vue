@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-16 items-center justify-center">
+  <div class="flex flex-col lg:flex-row gap-16 items-center justify-center">
     <div
       class="w-[28rem] relative h-[28rem] bg-gradient-to-tl rounded-lg from-primary to-secondary flex items-center justify-center"
     >
@@ -11,7 +11,7 @@
       />
     </div>
 
-    <div class="max-w-xl">
+    <div class="max-w-xl text-center lg:text-left">
       <h3 class="text-primary text-4xl font-bold tracking-wide">
         Microsoft Azure Workshops
       </h3>

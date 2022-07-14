@@ -109,6 +109,52 @@
 </template>
 <script lang="ts" setup>
 useHead({
-  title: "ICES International - Home",
+  title: "ICES - Maximizing business potentials with technology",
+  meta: [
+    {
+      name: "title",
+      content: "ICES - Maximizing business potentials with technology",
+    },
+
+    {
+      name: "description",
+      content:
+        "We align with your company’s business objectives and provide the technological solution enablers to achieve these objectives",
+    },
+    { property: "og:image", content: "/images/ICES.png" },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://icesinternational.com" },
+    {
+      property: "og:title",
+      content: "ICES - Maximizing business potentials with technology",
+    },
+    {
+      name: "og:description",
+      content:
+        "We align with your company’s business objectives and provide the technological solution enablers to achieve these objectives",
+    },
+
+    { property: "twitter:image", content: "/images/ICES.png" },
+    { property: "twitter:card", content: "summary_large_image" },
+    { property: "twitter:url", content: "https://icesinternational.com" },
+    {
+      property: "twitter:title",
+      content: "ICES - Maximizing business potentials with technology",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "We align with your company’s business objectives and provide the technological solution enablers to achieve these objectives",
+    },
+
+    {
+      name: "keywords",
+      content: "technology, microsoft, objectives",
+    },
+    {
+      name: "language",
+      content: "English",
+    },
+  ],
 });
 </script>

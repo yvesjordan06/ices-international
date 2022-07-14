@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-start py-28">
-    <div class="max-w-xl">
+  <div class="flex items-center justify-center xl:justify-start py-28">
+    <div class="max-w-xl text-center xl:text-left">
       <h1
         class="text-5xl tracking-wide font-semibold leading-relaxed text-white"
       >

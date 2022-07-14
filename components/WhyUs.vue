@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full grid grid-cols-3 gap-12">
+  <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-12">
     <div
       v-for="reason of reasons"
       class="bg-base-100 rounded-lg flex-col flex items-center shadow-lg p-12"

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center">
+  <div class="flex flex-col lg:flex-row justify-between items-center">
     <div class="flex items-center uppercase">
       <span
         style="font-size: 15rem"
