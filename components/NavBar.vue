@@ -5,9 +5,9 @@
       <ul
         class="flex gap-4 [&>li]:px-5 [&>li:hover]:text-secondary [&>li]:cursor-pointer"
       >
-        <li><nuxt-link to="/#company">Company</nuxt-link></li>
-        <li><nuxt-link to="/#services">Services</nuxt-link></li>
-        <li><nuxt-link to="/#event">Events</nuxt-link></li>
+        <li><a href="/#company">Company</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><nuxt-link to="/events">Events</nuxt-link></li>
       </ul>
     </div>
   </div>

@@ -9,6 +9,7 @@ export const clients: SliderModel[] = [
     image: "/images/partners/tech/microsoft.png",
     name: "Microsoft",
   },
+
   {
     image: "/images/partners/tech/huawei.png",
     name: "ESSACA",
@@ -26,5 +27,13 @@ export const clients: SliderModel[] = [
   {
     image: "/images/partners/tech/jyga.png",
     name: "JYGA",
+  },
+  {
+    image: "/images/partners/tech/hp.png",
+    name: "HP",
+  },
+  {
+    image: "/images/partners/tech/Liquid Telecom.png",
+    name: "Liquid Telecom",
   },
 ];

@@ -10,7 +10,7 @@
         We align with your company’s business objectives and provide the
         technological solution enablers to achieve these objectives
       </p>
-      <button class="mt-8 btn btn-secondary">How can we help ?</button>
+      <button class="mt-8 btn btn-secondary hidden">How can we help ?</button>
     </div>
   </div>
 </template>

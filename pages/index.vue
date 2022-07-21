@@ -9,7 +9,7 @@
         <Hero class="container mx-auto" />
       </div>
     </section>
-    <section class="w-full bg-base-200 z-10 relative p-16">
+    <section class="w-full bg-base-200 z-10 relative p-16" id="company">
       <div class="container mx-auto">
         <h3
           class="text-base uppercase tracking-wide font-bold text-primary text-center"

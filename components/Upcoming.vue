@@ -29,7 +29,13 @@
 
       <p class="text-primary mt-12 uppercase">Schedule</p>
       <p class="text-gray-300 mt-4 uppercase">
-        Douala - 25<sup class="text-sm lowercase">th</sup> July 2022
+        Douala - 28<sup class="text-sm lowercase">th</sup> July 2022
+        <a
+          href="/files/agenda.pdf"
+          target="_blank"
+          class="btn btn-sm btn-secondary ml-4"
+          >Full Schedule</a
+        >
       </p>
 
       <p class="text-gray-300 mt-4 uppercase">
