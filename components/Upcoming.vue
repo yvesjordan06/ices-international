@@ -18,32 +18,24 @@
 
       <p class="text-gray-300 mt-12">
         While helping your clients develop skills and discover business growth
-        opportunities by hosting one-day workshops on specific on specific Azure
-        products and services, learn everything there is to know about the cloud
-        ecosystem with Microsoft ecosystem with Microsoft Azure and better
-        differentiate themselves with organizational and operational
-        capabilities in approaching their market and understanding how market
-        and understand how Microsoft aligns with new markets and ever-increasing
-        customer demand.
+        opportunities by hosting one-day workshops on specific on specific Azure products
+        and services, learn everything there is to know about the cloud ecosystem with
+        Microsoft ecosystem with Microsoft Azure and better differentiate themselves with
+        organizational and operational capabilities in approaching their market and
+        understanding how market and understand how Microsoft aligns with new markets and
+        ever-increasing customer demand.
       </p>
 
       <p class="text-primary mt-12 uppercase">Schedule</p>
       <p class="text-gray-300 mt-4 uppercase">
         Douala - 28<sup class="text-sm lowercase">th</sup> July 2022
-        <a
-          href="/files/agenda.pdf"
-          target="_blank"
-          class="btn btn-sm btn-secondary ml-4"
-          >Full Schedule</a
+        <a href="/files/agenda.pdf" target="_blank" class="btn btn-sm btn-secondary ml-4"
+          >View Schedule</a
         >
       </p>
 
-      <p class="text-gray-300 mt-4 uppercase">
-        Yaoundé - 19<sup class="text-sm lowercase">th</sup> August 2022
-      </p>
-      <p class="text-gray-300 mt-4 uppercase">
-        Douala - 16<sup class="text-sm lowercase">th</sup> September 2022
-      </p>
+      <p class="text-gray-300 mt-4 uppercase">Yaoundé - TO BE PLANNED</p>
+      <p class="text-gray-300 mt-4 uppercase">Douala - TO BE PLANNED</p>
     </div>
   </div>
 </template>

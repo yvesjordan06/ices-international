@@ -10,10 +10,16 @@ export const clients: SliderModel[] = [
     name: "ENSPD",
     shortDescription: "École Nationale Supérieure Polytechnique de Douala",
   },
+
   {
-    image: "/images/partners/essaca.png",
-    name: "ESSACA",
-    shortDescription: "École Supérieure Spéciale d'Architecture du Cameroun",
+    image: "/images/partners/FORTINET.png",
+    name: "FORTINET",
+    shortDescription: "FORTINET",
+  },
+  {
+    image: "/images/partners/ICTU.jpg",
+    name: "ICTU",
+    shortDescription: "ICT University",
   },
   {
     image: "/images/partners/istag.png",
