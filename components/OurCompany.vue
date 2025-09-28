@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col lg:flex-row justify-between items-center">
+  <div class="flex flex-col items-center justify-between lg:flex-row">
     <div class="flex items-center uppercase">
       <span
         style="font-size: 15rem"
-        class="font-bold tracking-wider text-primary"
-        >20</span
+        class="flex items-center font-bold tracking-wider text-primary"
+        >20 <strong class="text-4xl">+</strong></span
       >
-      <p class="text-sm w-8">Years of working experience</p>
+      <p class="w-8 text-sm">Years of working experience</p>
     </div>
 
     <div class="max-w-md">

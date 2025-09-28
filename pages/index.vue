@@ -1,22 +1,22 @@
 <template>
   <div class="w-full overflow-hidden">
     <section
-      class="w-full bg-cover"
-      style="background-image: url('/images/bg.webp')"
+      class="w-full bg-no-repeat bg-cover"
+      style="background-image: url('/images/bg1.png')"
     >
       <div class="w-full h-full">
         <NavBar class="text-white" />
         <Hero class="container mx-auto" />
       </div>
     </section>
-    <section class="w-full bg-base-200 z-10 relative p-16" id="company">
+    <section class="relative z-10 w-full p-16 bg-base-200" id="company">
       <div class="container mx-auto">
         <h3
-          class="text-base uppercase tracking-wide font-bold text-primary text-center"
+          class="text-base font-bold tracking-wide text-center uppercase text-primary"
         >
           Why us ?
         </h3>
-        <h5 class="text-3xl mt-2 text-center font-bold">
+        <h5 class="mt-2 text-3xl font-bold text-center">
           Why would you choose ICES as a partner ?
         </h5>
 
@@ -24,31 +24,31 @@
       </div>
     </section>
 
-    <section class="w-full z-10 relative p-16" id="company">
+    <section class="relative z-10 w-full p-16" id="company">
       <div class="container mx-auto">
         <h3
-          class="text-base uppercase tracking-wide font-bold text-primary text-center"
+          class="text-base font-bold tracking-wide text-center uppercase text-primary"
         >
           OUR COMPANY
         </h3>
         <h5
-          class="text-3xl mt-4 text-center font-bold max-w-xl tracking-wide mx-auto"
+          class="max-w-xl mx-auto mt-4 text-3xl font-bold tracking-wide text-center"
         >
           We provide effective and efficient support services that guarantee
           seamless operations
         </h5>
-        <OurCompany class="mt-8 max-w-5xl mx-auto" />
+        <OurCompany class="max-w-5xl mx-auto mt-8" />
       </div>
     </section>
 
-    <section class="w-full bg-base-200 mt-16 z-10 relative p-16" id="services">
+    <section class="relative z-10 w-full p-16 mt-16 bg-base-200" id="services">
       <div class="container mx-auto">
         <h3
-          class="text-base uppercase tracking-wide font-bold text-primary text-center"
+          class="text-base font-bold tracking-wide text-center uppercase text-primary"
         >
           SERVICES WE DELIVER
         </h3>
-        <h5 class="text-3xl mt-2 text-center font-bold">
+        <h5 class="mt-2 text-3xl font-bold text-center">
           Optimize your IT Infrastructure
         </h5>
 
@@ -59,7 +59,7 @@
     <section class="w-full py-12">
       <div class="container mx-auto">
         <h3
-          class="text-base uppercase tracking-wide font-bold text-primary text-center"
+          class="text-base font-bold tracking-wide text-center uppercase text-primary"
         >
           OUR CUSTOMER
         </h3>
@@ -70,12 +70,12 @@
     <section class="w-full py-12 bg-neutral" id="events">
       <div class="container mx-auto">
         <h3
-          class="text-base uppercase tracking-wide font-bold text-primary text-center"
+          class="hidden text-base font-bold tracking-wide text-center uppercase text-primary"
         >
           COMING UP
         </h3>
         <h5
-          class="text-3xl mt-4 text-center font-bold max-w-xl tracking-wide mx-auto"
+          class="max-w-xl mx-auto mt-4 text-3xl font-bold tracking-wide text-center"
         >
           Learn about our upcoming events
         </h5>
@@ -85,7 +85,7 @@
     <section class="w-full py-12">
       <div class="container mx-auto">
         <h3
-          class="text-base uppercase tracking-wide font-bold text-primary text-center"
+          class="text-base font-bold tracking-wide text-center uppercase text-primary"
         >
           OUR TECHNOLOGY PARTNERS
         </h3>
@@ -97,12 +97,24 @@
     <section class="w-full py-12">
       <div class="container mx-auto">
         <h3
-          class="text-base uppercase tracking-wide font-bold text-primary text-center"
+          class="text-base font-bold tracking-wide text-center uppercase text-primary"
         >
           OUR EDUCATIONAL PARTNERS
         </h3>
 
         <OurEducationPartners class="mt-8" />
+      </div>
+    </section>
+
+    <section class="w-full py-12">
+      <div class="container mx-auto">
+        <h3
+          class="text-base font-bold tracking-wide text-center uppercase text-primary"
+        >
+          Training Gallery
+        </h3>
+
+        <TrainingGalery class="mt-8" />
       </div>
     </section>
   </div>

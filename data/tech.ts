@@ -11,8 +11,33 @@ export const clients: SliderModel[] = [
   },
 
   {
+    image: "/images/partners/tech/mc3.png",
+    name: "MC3 Cloud",
+  },
+
+  {
+    image: "/images/partners/tech/quest.jpg",
+    name: "Quest",
+  },
+
+  {
+    image: "/images/partners/tech/oneidentity.png",
+    name: "One Identity",
+  },
+
+  {
+    image: "/images/partners/tech/manageengine.png",
+    name: "ADManager Plus Manage Engine",
+  },
+
+  {
+    image: "/images/partners/tech/adobe.jpg",
+    name: "Adobe",
+  },
+
+  {
     image: "/images/partners/tech/huawei.png",
-    name: "ESSACA",
+    name: "Huawei",
   },
 
   {
@@ -22,6 +47,15 @@ export const clients: SliderModel[] = [
   {
     image: "/images/partners/tech/axis.png",
     name: "Axis Communications",
+  },
+  {
+    image: "/images/partners/tech/xtremlab.jpg",
+    name: "Xtremelab",
+  },
+
+  {
+    image: "/images/partners/tech/aitek.png",
+    name: "AiTEK",
   },
 
   {
@@ -33,7 +67,11 @@ export const clients: SliderModel[] = [
     name: "HP",
   },
   {
-    image: "/images/partners/tech/Liquid Telecom.png",
-    name: "Liquid Telecom",
+    image: "/images/partners/tech/google.jpg",
+    name: "Google",
+  },
+  {
+    image: "/images/partners/tech/wmware.jpg",
+    name: "VMware",
   },
 ];
