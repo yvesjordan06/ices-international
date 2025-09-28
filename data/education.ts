@@ -6,7 +6,7 @@ interface SliderModel {
 
 export const clients: SliderModel[] = [
   {
-    image: "/images/partners/ICTU.png",
+    image: "/images/partners/ictu.png",
     name: "ICTU",
     shortDescription: "ICT University",
   },
