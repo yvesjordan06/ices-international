@@ -33,7 +33,7 @@
       <div class="space-y-1">
         <p class="font-bold text-md">ICES RDC</p>
         <p>Headquarters : 41 Avenue Tombalbaye</p>
-        <p>Quater Fatima, Commune de la Gombe</p>
+        <p>Quartier Fatima, Commune de la Gombe</p>
         <p>Kinshasa, République Démocratique du Congo</p>
         <p>Phone: +243 812679046 / +243 850564619</p>
       </div>
