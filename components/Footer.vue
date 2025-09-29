@@ -1,5 +1,5 @@
 <template>
-  <footer class="p-10 footer footer-center bg-neutral text-neutral-content">
+  <footer class="p-10 footer footer-center bg-neutral text-neutral-content" id="contact">
     <div>
       <Logo class="w-44" />
       <p class="mt-2 font-bold">
@@ -17,21 +17,25 @@
           info@icesinternational.com
         </a>
       </p>
-      <p>Téléphones : +237 242010386 / +237 677510049</p>
+      <!-- <p>Téléphones : +237 242010386 / +237 677510049</p> -->
     </div>
 
     <!-- Bloc adresses -->
-    <div class="grid gap-4 text-sm text-center md:grid-cols-2">
-      <div>
-        <p class="font-bold">ICES Cameroun</p>
+    <div class="grid gap-4 text-center md:grid-cols-2">
+      <div class="space-y-1 border-r md:border-r-2 pr-4">
+        <p class="font-bold">ICES CAMEROUN</p>
         <p>Bata Nlongkak BP 11102</p>
         <p>Yaoundé, Cameroun</p>
+        <p>Phone: +237 621231978 / +237 677510049</p>
+        <p>France : +33 745518545</p>
       </div>
-      <div>
-        <p class="font-bold">ICES RDC</p>
-        <p>Siège social : 41 Avenue Tombalbaye</p>
-        <p>Quartier Fatima, Commune de la Gombe</p>
+
+      <div class="space-y-1">
+        <p class="font-bold text-md">ICES RDC</p>
+        <p>Headquarters : 41 Avenue Tombalbaye</p>
+        <p>Quater Fatima, Commune de la Gombe</p>
         <p>Kinshasa, République Démocratique du Congo</p>
+        <p>Phone: +243 812679046 / +243 850564619</p>
       </div>
     </div>
 

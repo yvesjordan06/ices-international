@@ -2,7 +2,7 @@
   <div class="w-full overflow-hidden">
     <section
       class="w-full bg-no-repeat bg-cover"
-      style="background-image: url('/images/bg1.png')"
+      style="background-image: url('/images/bg1.png')" id="home"
     >
       <div class="w-full h-full">
         <NavBar class="text-white" />
@@ -24,7 +24,7 @@
       </div>
     </section>
 
-    <section class="relative z-10 w-full p-16" id="company">
+    <section class="relative z-10 w-full p-16" id="company2">
       <div class="container mx-auto">
         <h3
           class="text-base font-bold tracking-wide text-center uppercase text-primary"
