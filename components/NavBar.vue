@@ -8,8 +8,8 @@
         <li><a href="/#company">Why us</a></li>
         <li><a href="/#company2">Our company</a></li>
         <li><a href="/#services">Services</a></li>
-        <li><a href="/#contact">Contact us</a></li>
-        <!-- <li><nuxt-link to="/events">Events</nuxt-link></li> -->
+        <!-- <li><a href="/#contact">Contact us</a></li> -->
+        <li><nuxt-link to="/about">Contact us</nuxt-link></li>
       </ul>
     </div>
   </div>
