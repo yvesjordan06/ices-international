@@ -5,12 +5,12 @@
       <span class="eyebrow text-mint">Our company</span>
       <div class="mt-8 flex items-end gap-6">
         <span
-          class="font-display font-bold leading-none text-white text-[8rem] sm:text-[11rem] tracking-tightest"
+          class="font-display font-bold leading-none text-white text-[7rem] sm:text-[10rem] tracking-tightest"
         >
-          30<span class="text-emerald">+</span>
+          19<span class="text-emerald">92</span>
         </span>
         <span class="pb-6 text-lg text-white/60 max-w-[9rem] leading-snug">
-          Years of proven experience
+          Delivering reliable technology since
         </span>
       </div>
     </div>
@@ -45,8 +45,8 @@
 </template>
 <script lang="ts" setup>
 const facts = [
-  { value: "1992", label: "Founded" },
-  { value: "CM · DRC", label: "Two countries" },
+  { value: "Cameroon", label: "Yaoundé office" },
+  { value: "DR Congo", label: "Kinshasa office" },
   { value: "Microsoft", label: "Certified partner" },
 ];
 </script>

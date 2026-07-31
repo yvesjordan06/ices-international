@@ -4,14 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: "#0A1628",
-        navy: "#0F2850",
-        emerald: "#0EA472",
-        mint: "#4DE8B8",
-        paper: "#F7FAFC",
-        mist: "#EDF3F9",
-        slate2: "#4A5F7A",
-        text2: "#5A6B80",
+        // ICES brand — derived from the logo (royal blue + ICES green)
+        ink: "#101541", // deepest royal, hero/footer base
+        navy: "#1E228F", // royal brand blue, gradients / borders / accents
+        emerald: "#00A14B", // ICES green accent
+        mint: "#37D07A", // bright green for accents on dark
+        paper: "#F6F7FB", // page background (blue-white)
+        mist: "#EDEFF9", // alternating light section
+        slate2: "#4C5480", // blue-grey body text
+        text2: "#5A6390",
       },
       fontFamily: {
         display: ["'Space Grotesk'", "sans-serif"],
@@ -21,8 +22,8 @@ module.exports = {
         tightest: "-0.03em",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(10,22,40,0.04), 0 12px 32px -12px rgba(10,22,40,0.14)",
-        lift: "0 8px 20px rgba(10,22,40,0.08), 0 24px 48px -16px rgba(10,22,40,0.22)",
+        card: "0 1px 2px rgba(16,21,65,0.05), 0 12px 32px -12px rgba(16,21,65,0.16)",
+        lift: "0 8px 20px rgba(16,21,65,0.10), 0 24px 48px -16px rgba(16,21,65,0.26)",
       },
       maxWidth: {
         "8xl": "88rem",
@@ -35,23 +36,23 @@ module.exports = {
     themes: [
       {
         ices: {
-          primary: "#0EA472",
-          "primary-focus": "#0B8A60",
+          primary: "#00A14B",
+          "primary-focus": "#00863E",
           "primary-content": "#FFFFFF",
-          secondary: "#0F2850",
-          "secondary-focus": "#0A1E3E",
+          secondary: "#1E228F",
+          "secondary-focus": "#171B6B",
           "secondary-content": "#FFFFFF",
-          accent: "#4DE8B8",
-          "accent-content": "#06231A",
-          neutral: "#0A1628",
-          "neutral-focus": "#060F1D",
-          "neutral-content": "#C3D2E3",
+          accent: "#37D07A",
+          "accent-content": "#062015",
+          neutral: "#12163F",
+          "neutral-focus": "#0C0F2E",
+          "neutral-content": "#C6CBE8",
           "base-100": "#FFFFFF",
-          "base-200": "#EDF3F9",
-          "base-300": "#DBE5F0",
-          "base-content": "#0A1628",
-          info: "#2E6BE6",
-          success: "#0EA472",
+          "base-200": "#EDEFF9",
+          "base-300": "#DBE0F2",
+          "base-content": "#101541",
+          info: "#1E228F",
+          success: "#00A14B",
           warning: "#E0A100",
           error: "#D64545",
           "--rounded-box": "1rem",

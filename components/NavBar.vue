@@ -1,30 +1,35 @@
 <template>
   <header
-    class="sticky top-0 z-50 w-full transition-all duration-300"
+    class="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300"
     :class="
       scrolled
-        ? 'bg-ink/85 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/20'
-        : 'bg-transparent border-b border-white/5'
+        ? 'bg-white/95 backdrop-blur-md border-b border-navy/10 shadow-md shadow-navy/5'
+        : 'bg-transparent border-b border-white/10'
     "
   >
     <div
-      class="container mx-auto flex items-center justify-between px-5 py-4 lg:py-5"
+      class="container mx-auto flex items-center justify-between px-5 py-3.5 lg:py-4"
     >
       <nuxt-link
         to="/"
-        class="inline-flex items-center bg-white rounded-lg px-2.5 py-1.5 shadow-sm ring-1 ring-black/5"
+        class="inline-flex items-center rounded-lg transition-all"
+        :class="scrolled ? '' : 'bg-white px-2.5 py-1.5 shadow-sm ring-1 ring-black/5'"
         aria-label="ICES International home"
       >
         <Logo class="h-9 lg:h-10" />
       </nuxt-link>
 
       <!-- Desktop nav -->
-      <nav class="hidden lg:flex items-center gap-9 text-sm font-medium text-white/85">
+      <nav
+        class="hidden lg:flex items-center gap-9 text-sm font-medium transition-colors"
+        :class="scrolled ? 'text-navy/80' : 'text-white/90'"
+      >
         <a
           v-for="link in links"
           :key="link.href"
           :href="link.href"
-          class="link-underline hover:text-white transition-colors"
+          class="link-underline transition-colors"
+          :class="scrolled ? 'hover:text-emerald' : 'hover:text-white'"
         >
           {{ link.label }}
         </a>
@@ -38,7 +43,12 @@
 
       <!-- Mobile toggle -->
       <button
-        class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg text-white bg-white/10 border border-white/10"
+        class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg border transition-colors"
+        :class="
+          scrolled
+            ? 'text-navy bg-navy/5 border-navy/10'
+            : 'text-white bg-white/10 border-white/15'
+        "
         aria-label="Toggle menu"
         @click="open = !open"
       >
@@ -51,7 +61,7 @@
       </button>
     </div>
 
-    <!-- Mobile panel -->
+    <!-- Mobile panel (always solid white for readability) -->
     <transition
       enter-active-class="transition duration-200 ease-out"
       enter-from-class="opacity-0 -translate-y-2"
@@ -62,13 +72,13 @@
     >
       <nav
         v-if="open"
-        class="lg:hidden bg-ink/95 backdrop-blur-md border-t border-white/10 px-5 py-4"
+        class="lg:hidden bg-white border-t border-navy/10 shadow-lg px-5 py-4"
       >
         <a
           v-for="link in links"
           :key="link.href"
           :href="link.href"
-          class="block py-3 text-white/85 border-b border-white/5"
+          class="block py-3 text-navy/80 border-b border-navy/5 hover:text-emerald"
           @click="open = false"
         >
           {{ link.label }}

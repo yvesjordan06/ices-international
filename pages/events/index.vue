@@ -4,8 +4,7 @@
     <section class="relative w-full hero-mesh overflow-hidden">
       <div class="absolute inset-0 grid-lines pointer-events-none"></div>
       <div class="relative z-10">
-        <NavBar />
-        <div class="container mx-auto px-5 py-20 lg:py-24 text-center">
+        <div class="container mx-auto px-5 pt-32 pb-20 lg:pt-40 lg:pb-24 text-center">
           <span class="eyebrow eyebrow--center text-mint">What's next at ICES</span>
           <h1 class="mt-5 display-title text-4xl sm:text-5xl lg:text-6xl text-white">
             Upcoming events

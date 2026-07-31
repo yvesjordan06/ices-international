@@ -60,9 +60,9 @@
 
 <script lang="ts" setup>
 const stats = [
-  { value: "30+", label: "Years delivering since 1992" },
-  { value: "2", label: "Countries · Cameroon & DRC" },
+  { value: "1992", label: "Delivering reliable tech since" },
+  { value: "Cameroon", label: "Head office · Yaoundé" },
+  { value: "DR Congo", label: "Regional office · Kinshasa" },
   { value: "Microsoft", label: "Certified partner & MCT trainer" },
-  { value: "9", label: "Core service lines" },
 ];
 </script>

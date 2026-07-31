@@ -3,8 +3,7 @@
     <!-- HERO -->
     <section class="relative w-full hero-mesh overflow-hidden" id="home">
       <div class="absolute inset-0 grid-lines pointer-events-none"></div>
-      <div class="relative z-10">
-        <NavBar />
+      <div class="relative z-10 pt-16">
         <div class="container mx-auto px-5">
           <Hero />
         </div>
