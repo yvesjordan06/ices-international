@@ -12,7 +12,7 @@
             ICES International Sarl
           </p>
           <p class="mt-1 text-sm text-neutral-content/70">
-            Providing reliable tech since 1992
+            Providing reliable tech since 2003
           </p>
 
           <div class="mt-6 flex gap-3">

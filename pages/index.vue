@@ -17,7 +17,7 @@
           align="center"
           eyebrow="Why us"
           title="Why leading teams choose ICES as a partner"
-          subtitle="Three decades of field experience, an obsession with outcomes, and standards that keep your solutions future-proof."
+          subtitle="Two decades of field experience, an obsession with outcomes, and standards that keep your solutions future-proof."
         />
         <WhyUs class="mt-14" />
       </div>

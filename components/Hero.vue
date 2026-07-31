@@ -5,7 +5,7 @@
         class="inline-flex items-center gap-2.5 text-xs font-display font-semibold uppercase tracking-[0.18em] text-mint"
       >
         <span class="h-1.5 w-1.5 rounded-full bg-mint"></span>
-        ICES International · Since 1992
+        ICES International · Since 2003
       </span>
 
       <h1
@@ -60,7 +60,7 @@
 
 <script lang="ts" setup>
 const stats = [
-  { value: "1992", label: "Delivering reliable tech since" },
+  { value: "2003", label: "Delivering reliable tech since" },
   { value: "Cameroon", label: "Head office · Yaoundé" },
   { value: "DR Congo", label: "Regional office · Kinshasa" },
   { value: "Microsoft", label: "Certified partner & MCT trainer" },

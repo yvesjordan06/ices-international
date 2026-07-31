@@ -24,7 +24,7 @@
         <div class="reveal">
           <span class="eyebrow">Who we are</span>
           <h2 class="mt-5 display-title text-3xl sm:text-4xl text-ink">
-            Bridging the skills gap since 1992
+            Bridging the skills gap since 2003
           </h2>
           <div class="mt-6 space-y-5 text-lg leading-8 text-slate2">
             <p>
@@ -117,7 +117,7 @@ useHead({
     {
       name: "description",
       content:
-        "ICES International — your trusted technology and learning partner across Cameroon and the DRC since 1992. Get in touch with our team.",
+        "ICES International — your trusted technology and learning partner across Cameroon and the DRC since 2003. Get in touch with our team.",
     },
     { property: "og:title", content: "About & Contact - ICES International" },
     { property: "og:type", content: "website" },
@@ -126,7 +126,7 @@ useHead({
     {
       property: "og:description",
       content:
-        "Your trusted technology and learning partner across Africa since 1992.",
+        "Your trusted technology and learning partner across Africa since 2003.",
     },
   ],
 });

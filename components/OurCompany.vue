@@ -7,7 +7,7 @@
         <span
           class="font-display font-bold leading-none text-white text-[7rem] sm:text-[10rem] tracking-tightest"
         >
-          19<span class="text-emerald">92</span>
+          20<span class="text-emerald">03</span>
         </span>
         <span class="pb-6 text-lg text-white/60 max-w-[9rem] leading-snug">
           Delivering reliable technology since
