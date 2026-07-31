@@ -79,7 +79,8 @@
         >
           Learn about our upcoming events
         </h5>
-        <Upcoming class="mt-16" />
+        <MctSummit class="mt-16" />
+        <Upcoming class="mt-24" />
       </div>
     </section>
     <section class="w-full py-12">
@@ -135,22 +136,22 @@ useHead({
     },
     { property: "og:image", content: "/images/ICES.png" },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://icesinternational.com" },
+    { property: "og:url", content: "https://www.icesinternational.com" },
     {
       property: "og:title",
       content: "ICES - Maximizing business potentials with technology",
     },
     {
-      name: "og:description",
+      property: "og:description",
       content:
         "We align with your company’s business objectives and provide the technological solution enablers to achieve these objectives",
     },
 
-    { property: "twitter:image", content: "/images/ICES.png" },
-    { property: "twitter:card", content: "summary_large_image" },
-    { property: "twitter:url", content: "https://icesinternational.com" },
+    { name: "twitter:image", content: "/images/ICES.png" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:url", content: "https://www.icesinternational.com" },
     {
-      property: "twitter:title",
+      name: "twitter:title",
       content: "ICES - Maximizing business potentials with technology",
     },
     {

@@ -15,10 +15,12 @@
     <div class="mt-8 bg-neutral py-8">
       <div class="container mx-auto">
         <h2 class="text-4xl font-bold tracking-wide text-primary mb-8">
-          July 2022
+          September 2026
         </h2>
 
-        <Upcoming />
+        <MctSummit />
+
+        <Upcoming class="mt-24" />
       </div>
     </div>
   </div>
@@ -38,21 +40,21 @@ useHead({
     },
     { property: "og:image", content: "/images/ICES.png" },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://icesinternational.com" },
+    { property: "og:url", content: "https://www.icesinternational.com" },
     {
       property: "og:title",
       content: "Our Events - ICES",
     },
     {
-      name: "og:description",
+      property: "og:description",
       content: "Discover and learn more with our upcoming events",
     },
 
-    { property: "twitter:image", content: "/images/ICES.png" },
-    { property: "twitter:card", content: "summary_large_image" },
-    { property: "twitter:url", content: "https://icesinternational.com" },
+    { name: "twitter:image", content: "/images/ICES.png" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:url", content: "https://www.icesinternational.com" },
     {
-      property: "twitter:title",
+      name: "twitter:title",
       content: "Our Events - ICES",
     },
     {

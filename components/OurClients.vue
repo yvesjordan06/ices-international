@@ -9,11 +9,11 @@
     @swiper="onSwiper"
     @slideChange="onSlideChange"
   >
-    <swiper-slide v-for="client of clients">
+    <swiper-slide v-for="client of clients" :key="client.name">
       <div
         class="flex flex-col items-center py-8 px-8 rounded-lg border bg-base-100 shadow-lg"
       >
-        <img class="w-32 h-32 object-contain" :src="client.image" />
+        <img class="w-32 h-32 object-contain" :src="client.image" :alt="client.name" />
         <p class="font-bold h-24 mt-4">{{ client.name }}</p>
       </div>
     </swiper-slide>

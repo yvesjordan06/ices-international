@@ -8,6 +8,7 @@
 
       <img
         src="/images/kobe.jpg"
+        alt="Joseph Kobe, CEO of ICES SARL"
         class="absolute object-contain object-top w-full h-full bg-white rounded-lg shadow-lg -top-8 -left-8"
       />
     </div>
@@ -44,6 +45,7 @@
       <a
         href="https://www.linkedin.com/in/joseph-kobe-54348b13/"
         target="_blank"
+        rel="noopener noreferrer"
         class="mt-8 btn btn-sm btn-secondary"
       >
         Learn More About Joseph

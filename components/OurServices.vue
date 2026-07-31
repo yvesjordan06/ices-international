@@ -2,10 +2,11 @@
   <div class="w-full grid grid-col-1 lg:grid-cols-3 gap-12">
     <div
       v-for="service of services"
+      :key="service.title"
       class="bg-base-100 rounded-lg flex-col flex items-center shadow-lg p-12"
     >
       <div class="w-52 h-52">
-        <img :src="service.image" class="w-full h-full" />
+        <img :src="service.image" :alt="service.title" class="w-full h-full" />
       </div>
       <h4 class="mt-8 font-bold uppercase">{{ service.title }}</h4>
       <p class="mt-8 text-text2">{{ service.description }}</p>

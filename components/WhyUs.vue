@@ -2,12 +2,13 @@
   <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-12">
     <div
       v-for="reason of reasons"
+      :key="reason.title"
       class="bg-base-100 rounded-lg flex-col flex items-center shadow-lg p-12"
     >
       <div
         class="w-32 rounded-full h-32 bg-secondary/30 flex justify-center items-center"
       >
-        <img :src="reason.image" class="w-24 h-24" />
+        <img :src="reason.image" :alt="reason.title" class="w-24 h-24" />
       </div>
       <h4 class="mt-8 font-bold uppercase">{{ reason.title }}</h4>
       <p class="mt-8 text-text2">{{ reason.description }}</p>

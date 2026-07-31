@@ -19,6 +19,7 @@
         <div class="relative w-full h-56 overflow-hidden">
           <img
             :src="training.images[currentImage[index]]"
+            :alt="training.title"
             class="object-cover w-full h-full transition-all duration-300 cursor-pointer"
           />
 
@@ -66,6 +67,7 @@
       <div class="relative w-full max-w-4xl">
         <img
           :src="allImages[currentLightboxImage]"
+          alt="ICES training session"
           class="max-h-[80vh] mx-auto object-contain"
         />
         <button
