@@ -1,8 +1,6 @@
 <template>
-  <div class="min-h-screen">
-    <ContactHeader />
-    <NavBar class="hidden" />
-
+  <div class="min-h-screen flex flex-col bg-paper">
+    <NavBar />
     <slot />
     <Footer class="mt-auto" />
   </div>

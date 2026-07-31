@@ -1,15 +1,23 @@
 <template>
-  <div class="w-full grid grid-col-1 lg:grid-cols-3 gap-12">
+  <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
       v-for="service of services"
       :key="service.title"
-      class="bg-base-100 rounded-lg flex-col flex items-center shadow-lg p-12"
+      class="card-elev reveal p-7 flex flex-col text-left"
     >
-      <div class="w-52 h-52">
-        <img :src="service.image" :alt="service.title" class="w-full h-full" />
+      <div class="h-36 rounded-xl bg-mist flex items-center justify-center p-4">
+        <img
+          :src="service.image"
+          :alt="service.title"
+          class="max-h-full w-auto object-contain"
+        />
       </div>
-      <h4 class="mt-8 font-bold uppercase">{{ service.title }}</h4>
-      <p class="mt-8 text-text2">{{ service.description }}</p>
+      <h4 class="mt-6 font-display text-lg font-semibold text-ink">
+        {{ service.title }}
+      </h4>
+      <p class="mt-3 text-[15px] leading-relaxed text-slate2">
+        {{ service.description }}
+      </p>
     </div>
   </div>
 </template>
@@ -36,7 +44,7 @@ const services: { image: string; title: string; description: string }[] = [
   },
   {
     image: "/images/security.png",
-    title: "Sécurity",
+    title: "Security",
     description:
       "Protect the integrity and security of your company's electronic information, functioning and databases from malicious sources.",
   },

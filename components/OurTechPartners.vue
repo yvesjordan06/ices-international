@@ -2,19 +2,29 @@
   <swiper
     :modules="modules"
     :slides-per-view="3"
-    :space-between="50"
-    navigation
+    :space-between="24"
+    :breakpoints="{
+      0: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    }"
     :pagination="{ clickable: true }"
-    autoplay
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
+    :autoplay="{ delay: 3000, disableOnInteraction: false }"
+    loop
+    class="py-4 pb-14"
   >
-    <swiper-slide v-for="client of clients" :key="client.name">
+    <swiper-slide v-for="client of clients" :key="client.name" class="h-auto">
       <div
-        class="flex flex-col items-center py-8 px-8 rounded-lg border bg-base-100 shadow-lg"
+        class="flex flex-col items-center justify-center gap-5 h-56 py-8 px-6 rounded-2xl border border-navy/10 bg-white shadow-card"
       >
-        <img class="w-32 h-32 object-contain" :src="client.image" :alt="client.name" />
-        <p class="font-bold h-24 mt-4">{{ client.name }}</p>
+        <img
+          class="w-24 h-24 object-contain"
+          :src="client.image"
+          :alt="client.name"
+        />
+        <p class="font-display font-semibold text-center text-ink">
+          {{ client.name }}
+        </p>
       </div>
     </swiper-slide>
   </swiper>

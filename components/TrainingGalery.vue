@@ -10,7 +10,7 @@
       <div
         v-for="(training, index) in trainings"
         :key="index"
-        class="relative overflow-hidden transition rounded-lg shadow-lg bg-base-100 hover:shadow-xl group"
+        class="relative overflow-hidden transition rounded-2xl border border-navy/10 shadow-card bg-white hover:shadow-lift group reveal cursor-pointer"
         @mouseenter="pauseAutoSlide(index)"
         @mouseleave="resumeAutoSlide(index)"
         @click="openLightbox(index)"
@@ -40,11 +40,11 @@
           </template>
         </div>
 
-        <div class="p-4">
-          <p class="text-sm font-semibold uppercase text-primary">
+        <div class="p-5">
+          <p class="text-xs font-display font-semibold uppercase tracking-widest text-emerald">
             {{ training.institute }}
           </p>
-          <h4 class="mt-2 text-lg font-bold text-base-content">
+          <h4 class="mt-2 font-display text-lg font-semibold text-ink">
             {{ training.title }}
           </h4>
         </div>
