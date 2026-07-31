@@ -50,7 +50,7 @@
         <div class="font-display text-3xl font-bold text-white leading-none">
           {{ stat.value }}
         </div>
-        <div class="mt-2 text-sm text-white/55 leading-snug">
+        <div class="mt-2 text-sm text-white/75 leading-snug">
           {{ stat.label }}
         </div>
       </div>
