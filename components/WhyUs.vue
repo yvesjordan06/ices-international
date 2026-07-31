@@ -1,17 +1,19 @@
 <template>
-  <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-12">
+  <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div
       v-for="reason of reasons"
       :key="reason.title"
-      class="bg-base-100 rounded-lg flex-col flex items-center shadow-lg p-12"
+      class="card-elev reveal p-8 text-left"
     >
       <div
-        class="w-32 rounded-full h-32 bg-secondary/30 flex justify-center items-center"
+        class="w-16 h-16 rounded-2xl bg-emerald/10 ring-1 ring-emerald/15 flex justify-center items-center"
       >
-        <img :src="reason.image" :alt="reason.title" class="w-24 h-24" />
+        <img :src="reason.image" :alt="reason.title" class="w-8 h-8 object-contain" />
       </div>
-      <h4 class="mt-8 font-bold uppercase">{{ reason.title }}</h4>
-      <p class="mt-8 text-text2">{{ reason.description }}</p>
+      <h4 class="mt-6 font-display text-lg font-semibold text-ink">
+        {{ reason.title }}
+      </h4>
+      <p class="mt-3 text-slate2 leading-relaxed">{{ reason.description }}</p>
     </div>
   </div>
 </template>

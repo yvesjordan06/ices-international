@@ -1,111 +1,106 @@
 <template>
-  <footer class="p-10 footer footer-center bg-neutral text-neutral-content" id="contact">
-    <div>
-      <Logo class="w-44" />
-      <p class="mt-2 font-bold">
-        ICES International Sarl <br />Providing reliable tech since 1992
-      </p>
-      <p>Copyright © {{ new Date().getFullYear() }} - All rights reserved</p>
-    </div>
+  <footer class="bg-ink text-neutral-content" id="contact">
+    <div class="h-1 w-full bg-gradient-to-r from-emerald to-mint"></div>
+    <div class="container mx-auto px-5 py-16">
+      <div class="grid gap-12 lg:grid-cols-4">
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+          <span class="inline-flex bg-white rounded-lg px-3 py-2 shadow-sm">
+            <Logo class="h-10 w-auto" />
+          </span>
+          <p class="mt-5 font-display font-semibold text-white">
+            ICES International Sarl
+          </p>
+          <p class="mt-1 text-sm text-neutral-content/70">
+            Providing reliable tech since 1992
+          </p>
 
-    <!-- Bloc contact -->
-    <div class="grid gap-2 text-sm text-center">
-      <p class="font-bold">Contact</p>
-      <p>
-        Email :
-        <a href="mailto:info@icesinternational.com" class="underline">
-          info@icesinternational.com
-        </a>
-      </p>
-      <!-- <p>Téléphones : +237 242010386 / +237 677510049</p> -->
-    </div>
+          <div class="mt-6 flex gap-3">
+            <a
+              v-for="s in socials"
+              :key="s.label"
+              :href="s.href"
+              :aria-label="s.label"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-white/70 hover:text-white hover:bg-emerald hover:border-emerald transition-colors"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" class="fill-current">
+                <path :d="s.path" />
+              </svg>
+            </a>
+          </div>
+        </div>
 
-    <!-- Bloc adresses -->
-    <div class="grid gap-4 text-center md:grid-cols-2">
-      <div class="space-y-1 border-r md:border-r-2 pr-4">
-        <p class="font-bold">ICES CAMEROUN</p>
-        <p>Bata Nlongkak BP 11102</p>
-        <p>Yaoundé, Cameroun</p>
-        <p>Phone: +237 621231978 / +237 677510049</p>
-        <p>France : +33 745518545</p>
+        <!-- Contact -->
+        <div>
+          <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
+            Contact
+          </h4>
+          <p class="mt-5 text-sm text-neutral-content/80">
+            Email:
+            <a
+              href="mailto:info@icesinternational.com"
+              class="link-underline text-white"
+            >
+              info@icesinternational.com
+            </a>
+          </p>
+        </div>
+
+        <!-- Cameroon -->
+        <div>
+          <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
+            ICES Cameroon
+          </h4>
+          <div class="mt-5 space-y-1.5 text-sm text-neutral-content/80">
+            <p>Bata Nlongkak BP 11102</p>
+            <p>Yaoundé, Cameroon</p>
+            <p>Phone: +237 621231978 / +237 677510049</p>
+            <p>France: +33 745518545</p>
+          </div>
+        </div>
+
+        <!-- DRC -->
+        <div>
+          <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
+            ICES DRC
+          </h4>
+          <div class="mt-5 space-y-1.5 text-sm text-neutral-content/80">
+            <p>Headquarters: 41 Avenue Tombalbaye</p>
+            <p>Quartier Fatima, Commune de la Gombe</p>
+            <p>Kinshasa, Democratic Republic of the Congo</p>
+            <p>Phone: +243 812679046 / +243 850564619</p>
+          </div>
+        </div>
       </div>
 
-      <div class="space-y-1">
-        <p class="font-bold text-md">ICES RDC</p>
-        <p>Headquarters : 41 Avenue Tombalbaye</p>
-        <p>Quartier Fatima, Commune de la Gombe</p>
-        <p>Kinshasa, République Démocratique du Congo</p>
-        <p>Phone: +243 812679046 / +243 850564619</p>
-      </div>
-    </div>
-
-    <!-- Réseaux sociaux -->
-    <div>
-      <div class="grid grid-flow-col gap-4">
-        <a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            class="fill-current"
-          >
-            <path
-              d="M24 4.557c-.883.392-1.832.656-2.828.775 
-              1.017-.609 1.798-1.574 2.165-2.724
-              -.951.564-2.005.974-3.127 1.195
-              -.897-.957-2.178-1.555-3.594-1.555
-              -3.179 0-5.515 2.966-4.797 6.045
-              -4.091-.205-7.719-2.165-10.148-5.144
-              -1.29 2.213-.669 5.108 1.523 6.574
-              -.806-.026-1.566-.247-2.229-.616
-              -.054 2.281 1.581 4.415 3.949 4.89
-              -.693.188-1.452.232-2.224.084
-              .626 1.956 2.444 3.379 4.6 3.419
-              -2.07 1.623-4.678 2.348-7.29 2.04
-              2.179 1.397 4.768 2.212 7.548 2.212
-              9.142 0 14.307-7.721 13.995-14.646
-              .962-.695 1.797-1.562 2.457-2.549z"
-            ></path>
-          </svg>
-        </a>
-        <a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            class="fill-current"
-          >
-            <path
-              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0
-              -3.897.266-4.356 2.62-4.385 8.816
-              .029 6.185.484 8.549 4.385 8.816
-              3.6.245 11.626.246 15.23 0
-              3.897-.266 4.356-2.62 4.385-8.816
-              -.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 
-              3.993-8 4.007z"
-            ></path>
-          </svg>
-        </a>
-        <a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            class="fill-current"
-          >
-            <path
-              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667
-              c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808
-              c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-            ></path>
-          </svg>
-        </a>
+      <div
+        class="mt-14 pt-8 border-t border-white/10 text-sm text-neutral-content/60"
+      >
+        Copyright © {{ new Date().getFullYear() }} ICES International Sarl — All
+        rights reserved
       </div>
     </div>
   </footer>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const socials = [
+  {
+    label: "Twitter",
+    href: "#",
+    path: "M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z",
+  },
+  {
+    label: "YouTube",
+    href: "#",
+    path: "M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z",
+  },
+  {
+    label: "Facebook",
+    href: "#",
+    path: "M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z",
+  },
+];
+</script>

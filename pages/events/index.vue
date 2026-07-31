@@ -1,28 +1,35 @@
 <template>
   <div class="w-full overflow-hidden">
-    <NavBar class="text-base-content" />
-    <section class="w-full bg-cover">
-      <div class="w-full h-full">
-        <div class="container mx-auto py-16">
-          <div>
-            <h1 class="text-6xl font-bold tracking-wide text-center">
-              Upcoming Events
-            </h1>
-          </div>
+    <!-- Hero -->
+    <section class="relative w-full hero-mesh overflow-hidden">
+      <div class="absolute inset-0 grid-lines pointer-events-none"></div>
+      <div class="relative z-10">
+        <NavBar />
+        <div class="container mx-auto px-5 py-20 lg:py-24 text-center">
+          <span class="eyebrow eyebrow--center text-mint">What's next at ICES</span>
+          <h1 class="mt-5 display-title text-4xl sm:text-5xl lg:text-6xl text-white">
+            Upcoming events
+          </h1>
+          <p class="mt-6 max-w-xl mx-auto text-lg text-white/70">
+            Conferences, summits and hands-on training designed to move African
+            tech forward.
+          </p>
         </div>
       </div>
     </section>
-    <div class="mt-8 bg-neutral py-8">
-      <div class="container mx-auto">
-        <h2 class="text-4xl font-bold tracking-wide text-primary mb-8">
-          September 2026
-        </h2>
 
-        <MctSummit />
-
-        <Upcoming class="mt-24" />
+    <!-- September 2026 -->
+    <section class="w-full bg-neutral py-20 lg:py-24">
+      <div class="container mx-auto px-5">
+        <span class="eyebrow text-mint">September 2026</span>
+        <div class="mt-12">
+          <MctSummit />
+        </div>
+        <div class="mt-24 border-t border-white/10 pt-16">
+          <Upcoming />
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 <script lang="ts" setup>
