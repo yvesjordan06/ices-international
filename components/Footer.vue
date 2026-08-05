@@ -2,9 +2,9 @@
   <footer class="bg-ink text-neutral-content" id="contact">
     <div class="h-1 w-full bg-gradient-to-r from-emerald to-mint"></div>
     <div class="container mx-auto px-5 py-16">
-      <div class="grid gap-12 lg:grid-cols-4">
+      <div class="grid gap-12 lg:grid-cols-3">
         <!-- Brand -->
-        <div class="lg:col-span-1">
+        <div>
           <span class="inline-flex bg-white rounded-lg px-3 py-2 shadow-sm">
             <Logo class="h-10 w-auto" />
           </span>
@@ -32,45 +32,47 @@
           </div>
         </div>
 
-        <!-- Contact -->
+        <!-- Email -->
         <div>
           <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
-            Contact
+            Email
           </h4>
-          <p class="mt-5 text-sm text-neutral-content/80">
-            Email:
-            <a
-              href="mailto:info@icesinternational.com"
-              class="link-underline text-white"
-            >
+          <div class="mt-5 space-y-2 text-sm">
+            <a href="mailto:info@icesinternational.com" class="block link-underline text-white">
               info@icesinternational.com
             </a>
-          </p>
-        </div>
-
-        <!-- Cameroon -->
-        <div>
-          <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
-            ICES Cameroon
-          </h4>
-          <div class="mt-5 space-y-1.5 text-sm text-neutral-content/80">
-            <p>Bata Nlongkak BP 11102</p>
-            <p>Yaoundé, Cameroon</p>
-            <p>Phone: +237 621231978 / +237 677510049</p>
-            <p>France: +33 745518545</p>
+            <a href="mailto:info@icesacademy.com" class="block link-underline text-white">
+              info@icesacademy.com
+            </a>
           </div>
         </div>
 
-        <!-- DRC -->
+        <!-- Web -->
         <div>
           <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
-            ICES DRC
+            Web
+          </h4>
+          <div class="mt-5 space-y-2 text-sm">
+            <a href="https://www.icesinternational.com" target="_blank" rel="noopener noreferrer" class="block link-underline text-white">
+              www.icesinternational.com
+            </a>
+            <a href="https://www.icesacademy.com" target="_blank" rel="noopener noreferrer" class="block link-underline text-white">
+              www.icesacademy.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offices -->
+      <div class="mt-12 pt-12 border-t border-white/10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div v-for="office in offices" :key="office.country">
+          <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
+            ICES {{ office.country }}
           </h4>
           <div class="mt-5 space-y-1.5 text-sm text-neutral-content/80">
-            <p>Headquarters: 41 Avenue Tombalbaye</p>
-            <p>Quartier Fatima, Commune de la Gombe</p>
-            <p>Kinshasa, Democratic Republic of the Congo</p>
-            <p>Phone: +243 812679046 / +243 850564619</p>
+            <p>{{ office.address }}</p>
+            <p>{{ office.city }}</p>
+            <p v-for="phone in office.phones" :key="phone">{{ phone }}</p>
           </div>
         </div>
       </div>
@@ -86,6 +88,27 @@
 </template>
 
 <script lang="ts" setup>
+const offices = [
+  {
+    country: "Cameroon",
+    address: "Rue Ceper",
+    city: "Yaoundé, Cameroon",
+    phones: ["(+237) 621 231 978", "(+237) 692 623 486"],
+  },
+  {
+    country: "Gabon",
+    address: "Akanda Sherko",
+    city: "Libreville, Gabon",
+    phones: ["(+241) 062 978 080", "(+241) 077 495 569"],
+  },
+  {
+    country: "DRC",
+    address: "Silikin Village",
+    city: "Kinshasa, DRC",
+    phones: ["(+243) 837 742 500", "(+243) 812 679 046"],
+  },
+];
+
 const socials = [
   {
     label: "Twitter",

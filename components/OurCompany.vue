@@ -46,7 +46,7 @@
 <script lang="ts" setup>
 const facts = [
   { value: "Cameroon", label: "Yaoundé office" },
+  { value: "Gabon", label: "Libreville office" },
   { value: "DR Congo", label: "Kinshasa office" },
-  { value: "Microsoft", label: "Certified partner" },
 ];
 </script>

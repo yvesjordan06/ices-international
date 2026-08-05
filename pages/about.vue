@@ -68,38 +68,32 @@
             <span class="eyebrow">Get in touch</span>
             <h3 class="mt-5 display-title text-2xl text-ink">Talk to our team</h3>
 
-            <a
-              href="mailto:info@icesinternational.com"
-              class="mt-6 flex items-center gap-3 text-navy font-medium hover:text-emerald transition-colors"
-            >
-              <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald/10 text-emerald shrink-0">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M3 6.5A1.5 1.5 0 014.5 5h15A1.5 1.5 0 0121 6.5v11a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 013 17.5v-11z" stroke="currentColor" stroke-width="1.6"/>
-                  <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                </svg>
-              </span>
-              info@icesinternational.com
-            </a>
+            <div class="mt-6 space-y-2.5">
+              <a
+                v-for="mail in emails"
+                :key="mail"
+                :href="`mailto:${mail}`"
+                class="flex items-center gap-3 text-navy font-medium hover:text-emerald transition-colors"
+              >
+                <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald/10 text-emerald shrink-0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 6.5A1.5 1.5 0 014.5 5h15A1.5 1.5 0 0121 6.5v11a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 013 17.5v-11z" stroke="currentColor" stroke-width="1.6"/>
+                    <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                {{ mail }}
+              </a>
+            </div>
 
-            <div class="mt-8 grid sm:grid-cols-2 gap-8">
-              <div>
-                <p class="font-display font-semibold text-ink">ICES Cameroon</p>
+            <div class="mt-8 grid sm:grid-cols-3 gap-8">
+              <div v-for="office in offices" :key="office.country">
+                <p class="font-display font-semibold text-ink">
+                  ICES {{ office.country }}
+                </p>
                 <div class="mt-2 space-y-1 text-sm text-slate2">
-                  <p>Bata Nlongkak BP 11102</p>
-                  <p>Yaoundé, Cameroon</p>
-                  <p>+237 621231978</p>
-                  <p>+237 677510049</p>
-                  <p>France: +33 745518545</p>
-                </div>
-              </div>
-              <div>
-                <p class="font-display font-semibold text-ink">ICES DRC</p>
-                <div class="mt-2 space-y-1 text-sm text-slate2">
-                  <p>41 Avenue Tombalbaye</p>
-                  <p>Quartier Fatima, La Gombe</p>
-                  <p>Kinshasa, DRC</p>
-                  <p>+243 812679046</p>
-                  <p>+243 850564619</p>
+                  <p>{{ office.address }}</p>
+                  <p>{{ office.city }}</p>
+                  <p v-for="phone in office.phones" :key="phone">{{ phone }}</p>
                 </div>
               </div>
             </div>
@@ -111,6 +105,29 @@
 </template>
 
 <script lang="ts" setup>
+const emails = ["info@icesinternational.com", "info@icesacademy.com"];
+
+const offices = [
+  {
+    country: "Cameroon",
+    address: "Rue Ceper",
+    city: "Yaoundé, Cameroon",
+    phones: ["(+237) 621 231 978", "(+237) 692 623 486"],
+  },
+  {
+    country: "Gabon",
+    address: "Akanda Sherko",
+    city: "Libreville, Gabon",
+    phones: ["(+241) 062 978 080", "(+241) 077 495 569"],
+  },
+  {
+    country: "DRC",
+    address: "Silikin Village",
+    city: "Kinshasa, DRC",
+    phones: ["(+243) 837 742 500", "(+243) 812 679 046"],
+  },
+];
+
 useHead({
   title: "About & Contact - ICES International",
   meta: [

@@ -22,7 +22,7 @@
       <p class="mt-7 max-w-xl text-lg leading-8 text-white/70">
         We align with your business objectives and deliver the technology
         enablers to reach them — from infrastructure and cloud to security and
-        training, across Cameroon, the DRC and beyond.
+        training, across Cameroon, Gabon, the DRC and beyond.
       </p>
 
       <div class="mt-9 flex flex-col sm:flex-row gap-4">
@@ -62,7 +62,7 @@
 const stats = [
   { value: "2003", label: "Delivering reliable tech since" },
   { value: "Cameroon", label: "Head office · Yaoundé" },
-  { value: "DR Congo", label: "Regional office · Kinshasa" },
-  { value: "Microsoft", label: "Certified partner & MCT trainer" },
+  { value: "Gabon", label: "Branch · Libreville" },
+  { value: "DR Congo", label: "Branch · Kinshasa" },
 ];
 </script>
