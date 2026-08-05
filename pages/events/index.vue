@@ -44,7 +44,7 @@ useHead({
       name: "description",
       content: "Discover and learn more with our upcoming events",
     },
-    { property: "og:image", content: "/images/ICES.png" },
+    { property: "og:image", content: "/images/ices-logo-color.png" },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://www.icesinternational.com" },
     {
@@ -56,7 +56,7 @@ useHead({
       content: "Discover and learn more with our upcoming events",
     },
 
-    { name: "twitter:image", content: "/images/ICES.png" },
+    { name: "twitter:image", content: "/images/ices-logo-color.png" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: "https://www.icesinternational.com" },
     {

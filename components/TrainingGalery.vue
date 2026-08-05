@@ -91,7 +91,10 @@
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import { trainings as trainingData } from "~~/data/training";
 
-const trainings = ref(trainingData);
+const props = defineProps<{ limit?: number }>();
+const trainings = ref(
+  props.limit ? trainingData.slice(0, props.limit) : trainingData
+);
 
 const currentImage = ref<number[]>(trainings.value.map(() => 0));
 const intervals: NodeJS.Timer[] = [];

@@ -97,15 +97,27 @@
       </div>
     </section>
 
-    <!-- TRAINING GALLERY -->
+    <!-- TRAINING GALLERY (teaser) -->
     <section class="w-full py-20 lg:py-28 bg-mist">
       <div class="container mx-auto px-5">
         <SectionHeading
           align="center"
           eyebrow="Training gallery"
           title="Hands-on learning in action"
+          subtitle="A glimpse of our workshops and certification sessions across Central Africa."
         />
-        <TrainingGalery class="mt-12" />
+        <TrainingGalery :limit="6" class="mt-12" />
+        <div class="mt-12 flex justify-center reveal">
+          <nuxt-link
+            to="/gallery"
+            class="btn btn-outline btn-primary font-display px-7"
+          >
+            View the full gallery
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="ml-1">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </nuxt-link>
+        </div>
       </div>
     </section>
   </div>
@@ -124,7 +136,7 @@ useHead({
       content:
         "We align with your company’s business objectives and provide the technological solution enablers to achieve these objectives",
     },
-    { property: "og:image", content: "/images/ICES.png" },
+    { property: "og:image", content: "/images/ices-logo-color.png" },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://www.icesinternational.com" },
     {
@@ -137,7 +149,7 @@ useHead({
         "We align with your company’s business objectives and provide the technological solution enablers to achieve these objectives",
     },
 
-    { name: "twitter:image", content: "/images/ICES.png" },
+    { name: "twitter:image", content: "/images/ices-logo-color.png" },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: "https://www.icesinternational.com" },
     {

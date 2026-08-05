@@ -12,11 +12,10 @@
     >
       <nuxt-link
         to="/"
-        class="inline-flex items-center rounded-lg transition-all"
-        :class="scrolled ? '' : 'bg-white px-2.5 py-1.5 shadow-sm ring-1 ring-black/5'"
+        class="inline-flex items-center"
         aria-label="ICES International home"
       >
-        <Logo class="h-9 lg:h-10" />
+        <Logo :variant="scrolled ? 'color' : 'white'" class="h-9 lg:h-11" />
       </nuxt-link>
 
       <!-- Desktop nav -->
@@ -103,6 +102,7 @@ const links = [
   { label: "Our company", href: "/#company2" },
   { label: "Services", href: "/#services" },
   { label: "Events", href: "/events" },
+  { label: "Gallery", href: "/gallery" },
 ];
 
 const open = ref(false);

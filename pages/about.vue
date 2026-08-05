@@ -138,7 +138,7 @@ useHead({
     },
     { property: "og:title", content: "About & Contact - ICES International" },
     { property: "og:type", content: "website" },
-    { property: "og:image", content: "/images/ICES.png" },
+    { property: "og:image", content: "/images/ices-logo-color.png" },
     { property: "og:url", content: "https://www.icesinternational.com/about" },
     {
       property: "og:description",

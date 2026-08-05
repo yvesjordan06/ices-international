@@ -4,15 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // ICES brand — derived from the logo (royal blue + ICES green)
-        ink: "#101541", // deepest royal, hero/footer base
-        navy: "#1E228F", // royal brand blue, gradients / borders / accents
-        emerald: "#00A14B", // ICES green accent
-        mint: "#37D07A", // bright green for accents on dark
-        paper: "#F6F7FB", // page background (blue-white)
-        mist: "#EDEFF9", // alternating light section
-        slate2: "#4C5480", // blue-grey body text
-        text2: "#5A6390",
+        // ICES brand — exact logo colors (royal blue #010081 + green #00B050)
+        ink: "#06063C", // deepest royal indigo, hero/footer base
+        navy: "#010081", // royal brand blue, gradients / borders / accents
+        emerald: "#00B050", // ICES green accent
+        mint: "#4FD98C", // bright green for accents on dark
+        paper: "#F5F6FB", // page background (blue-white)
+        mist: "#ECEEF8", // alternating light section
+        slate2: "#4A5178", // blue-grey body text
+        text2: "#59608C",
       },
       fontFamily: {
         display: ["'Space Grotesk'", "sans-serif"],
@@ -36,23 +36,23 @@ module.exports = {
     themes: [
       {
         ices: {
-          primary: "#00A14B",
-          "primary-focus": "#00863E",
+          primary: "#00B050",
+          "primary-focus": "#009344",
           "primary-content": "#FFFFFF",
-          secondary: "#1E228F",
-          "secondary-focus": "#171B6B",
+          secondary: "#010081",
+          "secondary-focus": "#01015E",
           "secondary-content": "#FFFFFF",
-          accent: "#37D07A",
-          "accent-content": "#062015",
-          neutral: "#12163F",
-          "neutral-focus": "#0C0F2E",
-          "neutral-content": "#C6CBE8",
+          accent: "#4FD98C",
+          "accent-content": "#052015",
+          neutral: "#06063C",
+          "neutral-focus": "#04042A",
+          "neutral-content": "#C3C8E6",
           "base-100": "#FFFFFF",
-          "base-200": "#EDEFF9",
-          "base-300": "#DBE0F2",
-          "base-content": "#101541",
-          info: "#1E228F",
-          success: "#00A14B",
+          "base-200": "#ECEEF8",
+          "base-300": "#DBDFF0",
+          "base-content": "#06063C",
+          info: "#010081",
+          success: "#00B050",
           warning: "#E0A100",
           error: "#D64545",
           "--rounded-box": "1rem",

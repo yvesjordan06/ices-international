@@ -5,9 +5,7 @@
       <div class="grid gap-12 lg:grid-cols-3">
         <!-- Brand -->
         <div>
-          <span class="inline-flex bg-white rounded-lg px-3 py-2 shadow-sm">
-            <Logo class="h-10 w-auto" />
-          </span>
+          <Logo variant="white" class="h-12 w-auto" />
           <p class="mt-5 font-display font-semibold text-white">
             ICES International Sarl
           </p>

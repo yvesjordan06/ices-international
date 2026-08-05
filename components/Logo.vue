@@ -1,6 +1,16 @@
 <template>
-  <div class="flex items-center">
-    <img src="/images/ICES.png" alt="ICES International" class="h-full w-auto object-contain" />
-  </div>
+  <img
+    :src="src"
+    alt="ICES International — A Commitment to Excellence"
+    class="h-full w-auto object-contain"
+  />
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { computed } from "vue";
+const props = defineProps<{ variant?: "color" | "white" }>();
+const src = computed(() =>
+  props.variant === "white"
+    ? "/images/ices-logo-white.png"
+    : "/images/ices-logo-color.png"
+);
+</script>
