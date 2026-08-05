@@ -90,6 +90,12 @@
                 <p class="font-display font-semibold text-ink">
                   ICES {{ office.country }}
                 </p>
+                <span
+                  v-if="office.head"
+                  class="inline-block mt-1 text-[10px] font-semibold uppercase tracking-wider text-emerald bg-emerald/10 rounded px-1.5 py-0.5"
+                >
+                  Head office
+                </span>
                 <div class="mt-2 space-y-1 text-sm text-slate2">
                   <p>{{ office.address }}</p>
                   <p>{{ office.city }}</p>
@@ -113,6 +119,7 @@ const offices = [
     address: "Rue Ceper",
     city: "Yaoundé, Cameroon",
     phones: ["(+237) 621 231 978", "(+237) 692 623 486"],
+    head: true,
   },
   {
     country: "Gabon",

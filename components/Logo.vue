@@ -1,9 +1,11 @@
 <template>
-  <img
-    :src="src"
-    alt="ICES International — A Commitment to Excellence"
-    class="h-full w-auto object-contain"
-  />
+  <span class="inline-flex items-center">
+    <img
+      :src="src"
+      alt="ICES International — A Commitment to Excellence"
+      class="h-full w-auto object-contain"
+    />
+  </span>
 </template>
 <script lang="ts" setup>
 import { computed } from "vue";

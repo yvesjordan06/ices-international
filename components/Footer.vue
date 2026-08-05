@@ -64,9 +64,17 @@
       <!-- Offices -->
       <div class="mt-12 pt-12 border-t border-white/10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         <div v-for="office in offices" :key="office.country">
-          <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
-            ICES {{ office.country }}
-          </h4>
+          <div class="flex items-center gap-2 flex-wrap">
+            <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
+              ICES {{ office.country }}
+            </h4>
+            <span
+              v-if="office.head"
+              class="text-[10px] font-semibold uppercase tracking-wider text-mint bg-mint/10 border border-mint/20 rounded px-1.5 py-0.5"
+            >
+              Head office
+            </span>
+          </div>
           <div class="mt-5 space-y-1.5 text-sm text-neutral-content/80">
             <p>{{ office.address }}</p>
             <p>{{ office.city }}</p>
@@ -92,6 +100,7 @@ const offices = [
     address: "Rue Ceper",
     city: "Yaoundé, Cameroon",
     phones: ["(+237) 621 231 978", "(+237) 692 623 486"],
+    head: true,
   },
   {
     country: "Gabon",
