@@ -85,7 +85,7 @@
               </a>
             </div>
 
-            <div class="mt-8 grid sm:grid-cols-3 gap-8">
+            <div class="mt-8 grid sm:grid-cols-2 gap-8">
               <div v-for="office in offices" :key="office.country">
                 <p class="font-display font-semibold text-ink">
                   ICES {{ office.country }}
@@ -97,7 +97,7 @@
                   Head office
                 </span>
                 <div class="mt-2 space-y-1 text-sm text-slate2">
-                  <p>{{ office.address }}</p>
+                  <p v-if="office.address">{{ office.address }}</p>
                   <p>{{ office.city }}</p>
                   <p v-for="phone in office.phones" :key="phone">{{ phone }}</p>
                 </div>
@@ -132,6 +132,12 @@ const offices = [
     address: "Silikin Village",
     city: "Kinshasa, DRC",
     phones: ["(+243) 837 742 500", "(+243) 812 679 046"],
+  },
+  {
+    country: "Madagascar",
+    address: "",
+    city: "Antananarivo, Madagascar",
+    phones: ["(+261) 38 25 597 59"],
   },
 ];
 
