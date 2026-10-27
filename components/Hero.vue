@@ -22,7 +22,7 @@
       <p class="mt-7 max-w-xl text-lg leading-8 text-white/70">
         We align with your business objectives and deliver the technology
         enablers to reach them — from infrastructure and cloud to security and
-        training, across Cameroon, Gabon, the DRC and beyond.
+        training, across Cameroon, Gabon, the DRC, Madagascar and beyond.
       </p>
 
       <div class="mt-9 flex flex-col sm:flex-row gap-4">
@@ -45,7 +45,7 @@
     </div>
 
     <!-- Stat rail -->
-    <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl">
+    <div class="mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl">
       <div v-for="stat in stats" :key="stat.label" class="stat-chip px-5 py-5">
         <div class="font-display text-3xl font-bold text-white leading-none">
           {{ stat.value }}
@@ -64,5 +64,6 @@ const stats = [
   { value: "Cameroon", label: "Head office · Yaoundé" },
   { value: "Gabon", label: "Branch · Libreville" },
   { value: "DR Congo", label: "Branch · Kinshasa" },
+  { value: "Madagascar", label: "Branch · Antananarivo" },
 ];
 </script>

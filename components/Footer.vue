@@ -62,7 +62,7 @@
       </div>
 
       <!-- Offices -->
-      <div class="mt-12 pt-12 border-t border-white/10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-12 pt-12 border-t border-white/10 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div v-for="office in offices" :key="office.country">
           <div class="flex items-center gap-2 flex-wrap">
             <h4 class="font-display text-sm font-semibold uppercase tracking-widest text-emerald">
@@ -76,7 +76,7 @@
             </span>
           </div>
           <div class="mt-5 space-y-1.5 text-sm text-neutral-content/80">
-            <p>{{ office.address }}</p>
+            <p v-if="office.address">{{ office.address }}</p>
             <p>{{ office.city }}</p>
             <p v-for="phone in office.phones" :key="phone">{{ phone }}</p>
           </div>
@@ -113,6 +113,12 @@ const offices = [
     address: "Silikin Village",
     city: "Kinshasa, DRC",
     phones: ["(+243) 837 742 500", "(+243) 812 679 046"],
+  },
+  {
+    country: "Madagascar",
+    address: "",
+    city: "Antananarivo, Madagascar",
+    phones: ["(+261) 38 25 597 59"],
   },
 ];
 

@@ -26,7 +26,7 @@
         reliable support that guarantees seamless operations.
       </p>
 
-      <div class="mt-10 grid grid-cols-3 gap-5">
+      <div class="mt-10 grid grid-cols-2 gap-5">
         <div
           v-for="fact in facts"
           :key="fact.label"
@@ -48,5 +48,6 @@ const facts = [
   { value: "Cameroon", label: "Yaoundé office" },
   { value: "Gabon", label: "Libreville office" },
   { value: "DR Congo", label: "Kinshasa office" },
+  { value: "Madagascar", label: "Antananarivo office" },
 ];
 </script>
